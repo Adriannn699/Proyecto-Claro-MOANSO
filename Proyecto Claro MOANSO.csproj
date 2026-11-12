@@ -84,6 +84,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Database\02_DatosPrueba.sql" />
     <Content Include="Database\ClaroGestionDB_Estructura.sql" />
     <Content Include="Database\Migraciones\001_CrearHistorialMigraciones.sql" />
     <Content Include="Database\Migraciones\LEEME.txt" />
