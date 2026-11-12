@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Proyecto_Claro_MOANSO.Cores;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,7 +17,7 @@ namespace Proyecto_Claro_MOANSO
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new FrmMenuPrincipal());
         }
     }
 }

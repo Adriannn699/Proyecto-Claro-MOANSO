@@ -48,6 +48,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConexionBD.cs" />
+    <Compile Include="Cores\FrmProgramarHorarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cores\FrmProgramarHorarios.Designer.cs">
+      <DependentUpon>FrmProgramarHorarios.cs</DependentUpon>
+    </Compile>
     <Compile Include="Datos\DisponibilidadDatos.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -55,11 +61,23 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmMenuPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMenuPrincipal.Designer.cs">
+      <DependentUpon>FrmMenuPrincipal.cs</DependentUpon>
+    </Compile>
     <Compile Include="Negocio\DisponibilidadNegocio.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Cores\FrmProgramarHorarios.resx">
+      <DependentUpon>FrmProgramarHorarios.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMenuPrincipal.resx">
+      <DependentUpon>FrmMenuPrincipal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
