@@ -68,6 +68,12 @@
       <DependentUpon>FrmMenuPrincipal.cs</DependentUpon>
     </Compile>
     <Compile Include="Negocio\DisponibilidadNegocio.cs" />
+    <Compile Include="FrmMateriales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMateriales.Designer.cs">
+      <DependentUpon>FrmMateriales.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Cores\FrmProgramarHorarios.resx">
@@ -75,6 +81,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMateriales.resx">
+      <DependentUpon>FrmMateriales.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMenuPrincipal.resx">
       <DependentUpon>FrmMenuPrincipal.cs</DependentUpon>
