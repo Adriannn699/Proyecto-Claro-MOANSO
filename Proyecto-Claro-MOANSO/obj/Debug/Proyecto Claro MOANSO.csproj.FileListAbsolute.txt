@@ -1,0 +1,13 @@
+C:\Users\LENOVO\Source\Repos\Proyecto-Claro-MOANSO\bin\Debug\Proyecto Claro MOANSO.exe.config
+C:\Users\LENOVO\Source\Repos\Proyecto-Claro-MOANSO\bin\Debug\Proyecto Claro MOANSO.exe
+C:\Users\LENOVO\Source\Repos\Proyecto-Claro-MOANSO\bin\Debug\Proyecto Claro MOANSO.pdb
+C:\Users\LENOVO\Source\Repos\Proyecto-Claro-MOANSO\obj\Debug\Proyecto Claro MOANSO.csproj.AssemblyReference.cache
+C:\Users\LENOVO\Source\Repos\Proyecto-Claro-MOANSO\obj\Debug\Proyecto_Claro_MOANSO.Form1.resources
+C:\Users\LENOVO\Source\Repos\Proyecto-Claro-MOANSO\obj\Debug\Proyecto_Claro_MOANSO.FrmMateriales.resources
+C:\Users\LENOVO\Source\Repos\Proyecto-Claro-MOANSO\obj\Debug\Proyecto_Claro_MOANSO.Properties.Resources.resources
+C:\Users\LENOVO\Source\Repos\Proyecto-Claro-MOANSO\obj\Debug\Proyecto Claro MOANSO.csproj.GenerateResource.cache
+C:\Users\LENOVO\Source\Repos\Proyecto-Claro-MOANSO\obj\Debug\Proyecto Claro MOANSO.csproj.CoreCompileInputs.cache
+C:\Users\LENOVO\Source\Repos\Proyecto-Claro-MOANSO\obj\Debug\Proyecto Claro MOANSO.exe
+C:\Users\LENOVO\Source\Repos\Proyecto-Claro-MOANSO\obj\Debug\Proyecto Claro MOANSO.pdb
+C:\Users\LENOVO\Source\Repos\Proyecto-Claro-MOANSO\obj\Debug\Proyecto Claro MOANSO.exe.config
+C:\Users\LENOVO\Source\Repos\Proyecto-Claro-MOANSO\obj\Debug\Proyecto_Claro_MOANSO.FrmAsignacionTurnos.resources

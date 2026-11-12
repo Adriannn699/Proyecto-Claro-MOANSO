@@ -1,0 +1,24 @@
+﻿MIGRACIONES - PROYECTO CLARO MOANSO
+
+BASE DE DATOS: ClaroGestionDB
+
+REGLAS DEL EQUIPO:
+
+1. Cada integrante debe crear un archivo SQL
+   para los cambios que realice en la BD.
+
+2. Los archivos deben tener un número consecutivo.
+
+3. No modificar migraciones que ya fueron
+   compartidas y ejecutadas.
+
+4. No borrar tablas creadas por otros integrantes.
+
+5. Antes de subir cambios a GitHub,
+   comprobar que el código SQL funciona.
+
+6. Cada integrante debe descargar los nuevos
+   scripts y ejecutarlos en su SQL Server.
+
+7. El archivo ClaroGestionDB_Estructura.sql
+   se utiliza para crear la base de datos inicial.
