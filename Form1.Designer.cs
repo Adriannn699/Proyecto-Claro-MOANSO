@@ -1,6 +1,6 @@
 ﻿namespace Proyecto_Claro_MOANSO
 {
-    partial class Form1
+    partial class FrmSolicitudes
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -28,261 +28,268 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pnlEncabezado = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.cboColaborador = new System.Windows.Forms.ComboBox();
-            this.cboPeriodo = new System.Windows.Forms.ComboBox();
-            this.cboDia = new System.Windows.Forms.ComboBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.dtpInicio = new System.Windows.Forms.DateTimePicker();
-            this.dtpFin = new System.Windows.Forms.DateTimePicker();
-            this.btnRegistrar = new System.Windows.Forms.Button();
-            this.btnModificar = new System.Windows.Forms.Button();
-            this.btnLimpiar = new System.Windows.Forms.Button();
-            this.btnAnular = new System.Windows.Forms.Button();
-            this.dgvDisponibilidades = new System.Windows.Forms.DataGridView();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
+            this.lblSubtitulo = new System.Windows.Forms.Label();
+            this.lblEmpresa = new System.Windows.Forms.Label();
+            this.lblTitulo = new System.Windows.Forms.Label();
+            this.btnNuevaSolicitud = new System.Windows.Forms.Button();
+            this.lblBuscar = new System.Windows.Forms.Label();
+            this.txtBuscar = new System.Windows.Forms.TextBox();
+            this.lblEstado = new System.Windows.Forms.Label();
+            this.cmbEstado = new System.Windows.Forms.ComboBox();
+            this.dgvSolicitudes = new System.Windows.Forms.DataGridView();
+            this.colCodigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colFecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colMateriales = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colEstado = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colEditar = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.colCancelar = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.lblPiePagina = new System.Windows.Forms.Label();
             this.pnlEncabezado.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvDisponibilidades)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvSolicitudes)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlEncabezado
             // 
-            this.pnlEncabezado.BackColor = System.Drawing.Color.Maroon;
-            this.pnlEncabezado.Controls.Add(this.label2);
-            this.pnlEncabezado.Controls.Add(this.label1);
-            this.pnlEncabezado.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlEncabezado.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnlEncabezado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(59)))), ((int)(((byte)(83)))));
+            this.pnlEncabezado.Controls.Add(this.lblSubtitulo);
+            this.pnlEncabezado.Controls.Add(this.lblEmpresa);
             this.pnlEncabezado.Location = new System.Drawing.Point(0, 0);
             this.pnlEncabezado.Name = "pnlEncabezado";
-            this.pnlEncabezado.Size = new System.Drawing.Size(1084, 100);
-            this.pnlEncabezado.TabIndex = 0;
+            this.pnlEncabezado.Size = new System.Drawing.Size(1000, 85);
+            this.pnlEncabezado.TabIndex = 1;
             // 
-            // label1
+            // lblSubtitulo
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(25, 22);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(529, 37);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "GESTIÓN DE DISPONIBILIDAD HORARIA";
+            this.lblSubtitulo.AutoSize = true;
+            this.lblSubtitulo.BackColor = System.Drawing.Color.Transparent;
+            this.lblSubtitulo.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSubtitulo.ForeColor = System.Drawing.Color.LightSteelBlue;
+            this.lblSubtitulo.Location = new System.Drawing.Point(25, 48);
+            this.lblSubtitulo.Name = "lblSubtitulo";
+            this.lblSubtitulo.Size = new System.Drawing.Size(179, 15);
+            this.lblSubtitulo.TabIndex = 1;
+            this.lblSubtitulo.Text = "Sistema de gestión de materiales";
             // 
-            // label2
+            // lblEmpresa
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(28, 60);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(286, 17);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Sistema de Gestión de Personal - Tiendas Claro";
+            this.lblEmpresa.AutoSize = true;
+            this.lblEmpresa.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmpresa.ForeColor = System.Drawing.Color.White;
+            this.lblEmpresa.Location = new System.Drawing.Point(25, 16);
+            this.lblEmpresa.Name = "lblEmpresa";
+            this.lblEmpresa.Size = new System.Drawing.Size(171, 30);
+            this.lblEmpresa.TabIndex = 0;
+            this.lblEmpresa.Text = "TIENDAS CLARO";
             // 
-            // cboColaborador
+            // lblTitulo
             // 
-            this.cboColaborador.FormattingEnabled = true;
-            this.cboColaborador.Location = new System.Drawing.Point(87, 188);
-            this.cboColaborador.Name = "cboColaborador";
-            this.cboColaborador.Size = new System.Drawing.Size(121, 21);
-            this.cboColaborador.TabIndex = 1;
+            this.lblTitulo.AutoSize = true;
+            this.lblTitulo.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitulo.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.lblTitulo.Location = new System.Drawing.Point(30, 115);
+            this.lblTitulo.Name = "lblTitulo";
+            this.lblTitulo.Size = new System.Drawing.Size(298, 32);
+            this.lblTitulo.TabIndex = 2;
+            this.lblTitulo.Text = "Solicitudes de materiales";
             // 
-            // cboPeriodo
+            // btnNuevaSolicitud
             // 
-            this.cboPeriodo.FormattingEnabled = true;
-            this.cboPeriodo.Location = new System.Drawing.Point(87, 304);
-            this.cboPeriodo.Name = "cboPeriodo";
-            this.cboPeriodo.Size = new System.Drawing.Size(121, 21);
-            this.cboPeriodo.TabIndex = 2;
+            this.btnNuevaSolicitud.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(125)))), ((int)(((byte)(112)))));
+            this.btnNuevaSolicitud.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnNuevaSolicitud.FlatAppearance.BorderSize = 0;
+            this.btnNuevaSolicitud.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNuevaSolicitud.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNuevaSolicitud.ForeColor = System.Drawing.Color.White;
+            this.btnNuevaSolicitud.Location = new System.Drawing.Point(790, 110);
+            this.btnNuevaSolicitud.Name = "btnNuevaSolicitud";
+            this.btnNuevaSolicitud.Size = new System.Drawing.Size(160, 42);
+            this.btnNuevaSolicitud.TabIndex = 3;
+            this.btnNuevaSolicitud.Text = "+ Nueva solicitud";
+            this.btnNuevaSolicitud.UseVisualStyleBackColor = false;
+            this.btnNuevaSolicitud.Click += new System.EventHandler(this.btnNuevaSolicitud_Click);
             // 
-            // cboDia
+            // lblBuscar
             // 
-            this.cboDia.FormattingEnabled = true;
-            this.cboDia.Location = new System.Drawing.Point(87, 435);
-            this.cboDia.Name = "cboDia";
-            this.cboDia.Size = new System.Drawing.Size(121, 21);
-            this.cboDia.TabIndex = 3;
+            this.lblBuscar.AutoSize = true;
+            this.lblBuscar.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBuscar.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.lblBuscar.Location = new System.Drawing.Point(30, 185);
+            this.lblBuscar.Name = "lblBuscar";
+            this.lblBuscar.Size = new System.Drawing.Size(96, 15);
+            this.lblBuscar.TabIndex = 4;
+            this.lblBuscar.Text = "Buscar solicitud:";
             // 
-            // label3
+            // txtBuscar
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(84, 153);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(67, 13);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Colaborador:";
+            this.txtBuscar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtBuscar.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBuscar.Location = new System.Drawing.Point(155, 180);
+            this.txtBuscar.Name = "txtBuscar";
+            this.txtBuscar.Size = new System.Drawing.Size(250, 23);
+            this.txtBuscar.TabIndex = 5;
             // 
-            // label4
+            // lblEstado
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(84, 265);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(46, 13);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "Periodo:";
+            this.lblEstado.AutoSize = true;
+            this.lblEstado.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEstado.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.lblEstado.Location = new System.Drawing.Point(440, 185);
+            this.lblEstado.Name = "lblEstado";
+            this.lblEstado.Size = new System.Drawing.Size(46, 15);
+            this.lblEstado.TabIndex = 6;
+            this.lblEstado.Text = "Estado:";
             // 
-            // label5
+            // cmbEstado
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(84, 396);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(94, 13);
-            this.label5.TabIndex = 6;
-            this.label5.Text = "Día de la semana:";
+            this.cmbEstado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbEstado.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbEstado.FormattingEnabled = true;
+            this.cmbEstado.Items.AddRange(new object[] {
+            "Todos",
+            "",
+            "Borrador",
+            "",
+            "Cancelada"});
+            this.cmbEstado.Location = new System.Drawing.Point(500, 180);
+            this.cmbEstado.Name = "cmbEstado";
+            this.cmbEstado.Size = new System.Drawing.Size(160, 23);
+            this.cmbEstado.TabIndex = 7;
             // 
-            // dtpInicio
+            // dgvSolicitudes
             // 
-            this.dtpInicio.CustomFormat = "HH:mm";
-            this.dtpInicio.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpInicio.Location = new System.Drawing.Point(326, 189);
-            this.dtpInicio.Name = "dtpInicio";
-            this.dtpInicio.ShowUpDown = true;
-            this.dtpInicio.Size = new System.Drawing.Size(200, 20);
-            this.dtpInicio.TabIndex = 7;
+            this.dgvSolicitudes.AllowUserToAddRows = false;
+            this.dgvSolicitudes.AllowUserToDeleteRows = false;
+            this.dgvSolicitudes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvSolicitudes.BackgroundColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.MidnightBlue;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvSolicitudes.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvSolicitudes.ColumnHeadersHeight = 40;
+            this.dgvSolicitudes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dgvSolicitudes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.colCodigo,
+            this.colFecha,
+            this.colMateriales,
+            this.colEstado,
+            this.colEditar,
+            this.colCancelar});
+            this.dgvSolicitudes.EnableHeadersVisualStyles = false;
+            this.dgvSolicitudes.Location = new System.Drawing.Point(30, 240);
+            this.dgvSolicitudes.MultiSelect = false;
+            this.dgvSolicitudes.Name = "dgvSolicitudes";
+            this.dgvSolicitudes.ReadOnly = true;
+            this.dgvSolicitudes.RowHeadersVisible = false;
+            this.dgvSolicitudes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvSolicitudes.Size = new System.Drawing.Size(920, 280);
+            this.dgvSolicitudes.TabIndex = 8;
             // 
-            // dtpFin
+            // colCodigo
             // 
-            this.dtpFin.CustomFormat = "HH:mm";
-            this.dtpFin.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpFin.Location = new System.Drawing.Point(326, 305);
-            this.dtpFin.Name = "dtpFin";
-            this.dtpFin.ShowUpDown = true;
-            this.dtpFin.Size = new System.Drawing.Size(200, 20);
-            this.dtpFin.TabIndex = 8;
+            this.colCodigo.HeaderText = "Código";
+            this.colCodigo.Name = "colCodigo";
+            this.colCodigo.ReadOnly = true;
             // 
-            // btnRegistrar
+            // colFecha
             // 
-            this.btnRegistrar.Location = new System.Drawing.Point(667, 176);
-            this.btnRegistrar.Name = "btnRegistrar";
-            this.btnRegistrar.Size = new System.Drawing.Size(129, 50);
-            this.btnRegistrar.TabIndex = 9;
-            this.btnRegistrar.Text = "Registrar";
-            this.btnRegistrar.UseVisualStyleBackColor = true;
-            this.btnRegistrar.Click += new System.EventHandler(this.btnRegistrar_Click);
+            this.colFecha.HeaderText = "Fecha de creación";
+            this.colFecha.Name = "colFecha";
+            this.colFecha.ReadOnly = true;
             // 
-            // btnModificar
+            // colMateriales
             // 
-            this.btnModificar.Location = new System.Drawing.Point(852, 176);
-            this.btnModificar.Name = "btnModificar";
-            this.btnModificar.Size = new System.Drawing.Size(128, 50);
-            this.btnModificar.TabIndex = 10;
-            this.btnModificar.Text = "Modificar";
-            this.btnModificar.UseVisualStyleBackColor = true;
-            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
+            this.colMateriales.HeaderText = "Cantidad de materiales";
+            this.colMateriales.Name = "colMateriales";
+            this.colMateriales.ReadOnly = true;
             // 
-            // btnLimpiar
+            // colEstado
             // 
-            this.btnLimpiar.Location = new System.Drawing.Point(852, 295);
-            this.btnLimpiar.Name = "btnLimpiar";
-            this.btnLimpiar.Size = new System.Drawing.Size(128, 50);
-            this.btnLimpiar.TabIndex = 12;
-            this.btnLimpiar.Text = "Limpiar";
-            this.btnLimpiar.UseVisualStyleBackColor = true;
-            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
+            this.colEstado.HeaderText = "Estado";
+            this.colEstado.Name = "colEstado";
+            this.colEstado.ReadOnly = true;
             // 
-            // btnAnular
+            // colEditar
             // 
-            this.btnAnular.Location = new System.Drawing.Point(667, 295);
-            this.btnAnular.Name = "btnAnular";
-            this.btnAnular.Size = new System.Drawing.Size(129, 50);
-            this.btnAnular.TabIndex = 11;
-            this.btnAnular.Text = "Anular";
-            this.btnAnular.UseVisualStyleBackColor = true;
-            this.btnAnular.Click += new System.EventHandler(this.btnAnular_Click);
+            this.colEditar.HeaderText = "Editar";
+            this.colEditar.Name = "colEditar";
+            this.colEditar.ReadOnly = true;
+            this.colEditar.Text = "Editar";
+            this.colEditar.UseColumnTextForButtonValue = true;
             // 
-            // dgvDisponibilidades
+            // colCancelar
             // 
-            this.dgvDisponibilidades.AllowUserToAddRows = false;
-            this.dgvDisponibilidades.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvDisponibilidades.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDisponibilidades.Location = new System.Drawing.Point(326, 392);
-            this.dgvDisponibilidades.MultiSelect = false;
-            this.dgvDisponibilidades.Name = "dgvDisponibilidades";
-            this.dgvDisponibilidades.ReadOnly = true;
-            this.dgvDisponibilidades.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvDisponibilidades.Size = new System.Drawing.Size(654, 151);
-            this.dgvDisponibilidades.TabIndex = 13;
-            this.dgvDisponibilidades.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDisponibilidades_CellClick);
+            this.colCancelar.HeaderText = "Cancelar";
+            this.colCancelar.Name = "colCancelar";
+            this.colCancelar.ReadOnly = true;
+            this.colCancelar.Text = "Cancelar";
+            this.colCancelar.UseColumnTextForButtonValue = true;
             // 
-            // label6
+            // lblPiePagina
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(323, 153);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(76, 13);
-            this.label6.TabIndex = 14;
-            this.label6.Text = "Hora de Inicio:";
+            this.lblPiePagina.AutoSize = true;
+            this.lblPiePagina.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPiePagina.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.lblPiePagina.Location = new System.Drawing.Point(30, 539);
+            this.lblPiePagina.Name = "lblPiePagina";
+            this.lblPiePagina.Size = new System.Drawing.Size(254, 13);
+            this.lblPiePagina.TabIndex = 9;
+            this.lblPiePagina.Text = "Sistema de gestión de materiales - Tiendas Claro";
             // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(323, 265);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(65, 13);
-            this.label7.TabIndex = 15;
-            this.label7.Text = "Hora de Fin:";
-            // 
-            // Form1
+            // FrmSolicitudes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(1084, 575);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.dgvDisponibilidades);
-            this.Controls.Add(this.btnLimpiar);
-            this.Controls.Add(this.btnAnular);
-            this.Controls.Add(this.btnModificar);
-            this.Controls.Add(this.btnRegistrar);
-            this.Controls.Add(this.dtpFin);
-            this.Controls.Add(this.dtpInicio);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.cboDia);
-            this.Controls.Add(this.cboPeriodo);
-            this.Controls.Add(this.cboColaborador);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
+            this.ClientSize = new System.Drawing.Size(984, 561);
+            this.Controls.Add(this.lblPiePagina);
+            this.Controls.Add(this.dgvSolicitudes);
+            this.Controls.Add(this.cmbEstado);
+            this.Controls.Add(this.lblEstado);
+            this.Controls.Add(this.txtBuscar);
+            this.Controls.Add(this.lblBuscar);
+            this.Controls.Add(this.btnNuevaSolicitud);
+            this.Controls.Add(this.lblTitulo);
             this.Controls.Add(this.pnlEncabezado);
-            this.MinimumSize = new System.Drawing.Size(900, 600);
-            this.Name = "Form1";
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.Name = "FrmSolicitudes";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Gestión de Disponibilidad Horaria";
+            this.Text = "Tiendas Claro - Solicitudes de materiales";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.pnlEncabezado.ResumeLayout(false);
             this.pnlEncabezado.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvDisponibilidades)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvSolicitudes)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
         private System.Windows.Forms.Panel pnlEncabezado;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox cboColaborador;
-        private System.Windows.Forms.ComboBox cboPeriodo;
-        private System.Windows.Forms.ComboBox cboDia;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.DateTimePicker dtpInicio;
-        private System.Windows.Forms.DateTimePicker dtpFin;
-        private System.Windows.Forms.Button btnRegistrar;
-        private System.Windows.Forms.Button btnModificar;
-        private System.Windows.Forms.Button btnLimpiar;
-        private System.Windows.Forms.Button btnAnular;
-        private System.Windows.Forms.DataGridView dgvDisponibilidades;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lblSubtitulo;
+        private System.Windows.Forms.Label lblEmpresa;
+        private System.Windows.Forms.Label lblTitulo;
+        private System.Windows.Forms.Button btnNuevaSolicitud;
+        private System.Windows.Forms.Label lblBuscar;
+        private System.Windows.Forms.TextBox txtBuscar;
+        private System.Windows.Forms.Label lblEstado;
+        private System.Windows.Forms.ComboBox cmbEstado;
+        private System.Windows.Forms.DataGridView dgvSolicitudes;
+        private System.Windows.Forms.Label lblPiePagina;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colCodigo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colFecha;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colMateriales;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colEstado;
+        private System.Windows.Forms.DataGridViewButtonColumn colEditar;
+        private System.Windows.Forms.DataGridViewButtonColumn colCancelar;
     }
 }
 
